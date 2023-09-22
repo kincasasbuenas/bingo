@@ -229,6 +229,7 @@ function handleFormSubmit(event) {
 		const storedValues = JSON.parse(localStorage.getItem('bingoValues')) || {};
 		storedValues[targetClass] = true;
 		localStorage.setItem('bingoValues', JSON.stringify(storedValues));
+		document.getElementById('bingoNumber').value = "";
 	} 
 	
 }

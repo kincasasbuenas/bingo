@@ -3,14 +3,18 @@
 <head>
     <title>Bingo Puerta del Norte 2025</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tesseract.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
 </head>
-<body>
+<body class="bg-gray-950 text-white container mx-auto">
     <div class="wrapper-form">
         <button id="resetButton">Reiniciar Partida</button>
         <form id="bingoForm">
             <div class="group">
-                <label for="bingoLetter">Selecciona una letra:</label>
-                <select id="bingoLetter">
+                <label for="bingoLetter" class="text-white">Selecciona una letra:</label>
+                <select id="bingoLetter" class="text-black">
                     <option value="B">B</option>
                     <option value="I">I</option>
                     <option value="N">N</option>
@@ -19,32 +23,32 @@
                 </select>
             </div>
             <div class="group">
-                <label for="bingoNumber">Ingresa un número:</label>
-                <input type="number" id="bingoNumber" min="1" max="75">
+                <label for="bingoNumber" class="text-white">Ingresa un número:</label>
+                <input type="number" id="bingoNumber" min="1" max="75" class="text-black">
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" class="text-black">Enviar</button>
         </form>
         <form class="filters" id="filterForm">
-            <p>Filtros por color:</p>
-            <label>
+            <p class="text-white">Filtros por color:</p>
+            <label class="text-white">
                 <input type="radio" name="color" value="roja"> Roja
             </label>
-            <label>
+            <label class="text-white">
                 <input type="radio" name="color" value="verde"> Verde
             </label>
-            <label>
+            <label class="text-white">
                 <input type="radio" name="color" value="azul"> Azul
             </label>
-            <label>
+            <label class="text-white">
                 <input type="radio" name="color" value="naranja"> Naranja
             </label>
-            <label>
+            <label class="text-white">
                 <input type="radio" name="color" value="todo" checked> Todo
             </label>
         </form>
     </div>
 
-    <h1 style="text-align: center;">Bingo Puerta del Norte 2023</h1>
+    <h1 class="text-center text-white">Bingo Puerta del Norte 2025</h1>
     <div id="bingoTablesContainer"></div>
 
     <script type="text/javascript" src="index.js"></script>

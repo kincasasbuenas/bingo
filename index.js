@@ -1,4 +1,3 @@
-
 // Verificar si el valor del filtro existe en localStorage
 const storedFilter = localStorage.getItem('filterValue');
 
@@ -69,7 +68,7 @@ const bingoBoards = [
 		]
 	},
 	{
-		title: "Tabla Verde #01504",
+		title: "Tabla Naranja #01504",
 		color: "naranja",
 		board: [
 			[14, 22, 43, 53, 66],
@@ -80,7 +79,7 @@ const bingoBoards = [
 		]
 	},
 	{
-		title: "Tabla Verde #01505",
+		title: "Tabla Naranja #01505",
 		color: "naranja",
 		board: [
 			[1, 17, 44, 58, 63],
@@ -91,7 +90,7 @@ const bingoBoards = [
 		]
 	},
 	{
-		title: "Tabla Verde #01506",
+		title: "Tabla Naranja #01506",
 		color: "naranja",
 		board: [
 			[12, 24, 32, 53, 63],
@@ -102,7 +101,7 @@ const bingoBoards = [
 		]
 	},
 	{
-		title: "Tabla Verde #01507",
+		title: "Tabla Naranja #01507",
 		color: "naranja",
 		board: [
 			[12, 27, 40, 54, 69],
@@ -113,7 +112,7 @@ const bingoBoards = [
 		]
 	},
 	{
-		title: "Tabla Verde #01508",
+		title: "Tabla Naranja #01508",
 		color: "naranja",
 		board: [
 			[9, 25, 45, 49, 70],
@@ -125,43 +124,60 @@ const bingoBoards = [
 	},
 ];
 
-// Función para crear una tabla de bingo en HTML con clases
+// Mapeo de color a clases Tailwind
+const colorTableClasses = {
+	verde: 'border-green-500',
+	roja: 'border-red-500',
+	azul: 'border-blue-500',
+	naranja: 'border-orange-500'
+};
+const colorHeaderClasses = {
+	verde: 'bg-green-500 text-white',
+	roja: 'bg-red-500 text-white',
+	azul: 'bg-blue-500 text-white',
+	naranja: 'bg-orange-500 text-white'
+};
+
+// Modificar createBingoTable para agregar la clase de color como clase CSS para el filtrado
 function createBingoTable(board, tableIndex) {
 	const container = document.getElementById('bingoTablesContainer');
 	const table = document.createElement('table');
-	table.classList.add(board.color);
+	table.className = `min-w-max mx-auto my-8 border-1 rounded-lg shadow-lg border-collapse ${colorTableClasses[board.color] || ''}`;
+	table.classList.add(board.color); // Para el filtrado
+
 	const tableCaption = document.createElement('caption');
-	tableCaption.textContent = board.title; // Usar el título de la tabla
+	tableCaption.textContent = board.title;
+	tableCaption.className = `text-lg font-bold mb-2 p-2 rounded-t-lg w-full ${colorHeaderClasses[board.color] || ''}`;
 	table.appendChild(tableCaption);
 
 	const tableBody = document.createElement('tbody');
 
+	// Mapeo de color a fondo de fila
+	const rowBgClasses = {
+		verde: 'bg-green-900',
+		roja: 'bg-red-900',
+		azul: 'bg-blue-900',
+		naranja: 'bg-orange-900'
+	};
+	const rowBg = rowBgClasses[board.color] || '';
+
 	for (let i = 0; i < board.board.length; i++) {
 		const row = document.createElement('tr');
+		row.className = rowBg;
 
 		for (let j = 0; j < board.board[i].length; j++) {
 			const cell = document.createElement('td');
+			cell.className = "p-2 text-center border-[0]";
 
 			if (board.board[i][j] === "FREE") {
-				cell.textContent = "N";
-				cell.classList.add('free');
-				cell.classList.add('active'); // Aplicar clase "free" para el espacio libre
+				cell.innerHTML = `<span class="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full text-black font-bold border-2 border-dashed border-gray-400">N</span>`;
+				cell.classList.add('free', 'active');
 			} else {
 				let word = "";
-				if(i ===0 && j === 0 ){
-					word = `<strong>${getBingoClass(j)}</strong>`
-				}else if(i ===0 && j === 0 ){
-					word = `<strong>${getBingoClass(j)}</strong>`
-				}else if(i ===0 && j === 1 ){
-					word = `<strong>${getBingoClass(j)}</strong>`
-				}else if(i ===0 && j === 2 ){
-					word = `<strong>${getBingoClass(j)}</strong>`
-				}else if(i ===0 && j === 3 ){
-					word = `<strong>${getBingoClass(j)}</strong>`
-				}else if(i ===0 && j === 4 ){
-					word = `<strong>${getBingoClass(j)}</strong>`
+				if(i === 0){
+					word = `<div class="mb-1 text-lg font-bold">${getBingoClass(j)}</div>`;
 				}
-				cell.innerHTML = word + board.board[i][j];
+				cell.innerHTML = word + `<span class="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full text-black font-bold">${board.board[i][j]}</span>`;
 				cell.classList.add(getBingoClass(j) + board.board[i][j]);
 			}
 
@@ -292,14 +308,12 @@ function showBingoAlert(tableTitle) {
 
 // Función para ocultar/mostrar tablas según el filtro seleccionado
 function filtrarTablas() {
-	console.log('filtrando tablas');
-
 	// Obtener el filtro seleccionado
 	const selectedFilter = document.querySelector('form.filters input[name="color"]:checked').value;
 	localStorage.setItem('filterValue', selectedFilter);
 
 	// Obtener todas las tablas
-	const tables = document.querySelectorAll('table');
+	const tables = document.querySelectorAll('#bingoTablesContainer table');
 
 	// Recorrer todas las tablas y aplicar el filtro
 	tables.forEach(table => {
@@ -308,7 +322,7 @@ function filtrarTablas() {
 		} else {
 			table.style.display = 'none'; // Ocultar la tabla
 		}
-	})
+	});
 }
 
 const filterForm = document.getElementById('filterForm');
@@ -339,3 +353,4 @@ resetButton.addEventListener('click', () => {
 		location.reload(); // Recargar la página para reiniciar la partida
 	} 
 });
+

@@ -68,6 +68,72 @@ const bingoBoards = [
 		]
 	},
 	{
+		title: "Tabla Verde #07039",
+		color: "verde",
+		board: [
+			[7, 26, 37, 54, 68],
+			[8, 17, 33, 55, 64],
+			[5, 20, "FREE", 49, 73],
+			[10, 16, 31, 47, 61],
+			[14, 24, 44, 50, 63]
+		]
+	},
+	{
+		title: "Tabla Verde #07041",
+		color: "verde",
+		board: [
+			[10, 16, 41, 48, 69],
+			[12, 17, 31, 52, 65],
+			[5, 28, "FREE", 58, 74],
+			[4, 26, 37, 59, 66],
+			[13, 20, 32, 54, 61]
+		]
+	},
+	{
+		title: "Tabla Verde #07040",
+		color: "verde",
+		board: [
+			[4, 30, 42, 59, 68],
+			[11, 19, 40, 53, 63],
+			[6, 24, "FREE", 47, 67],
+			[3, 21, 37, 55, 61],
+			[15, 25, 43, 57, 65]
+		]
+	},
+	{
+		title: "Tabla Verde #07042",
+		color: "verde",
+		board: [
+			[6, 19, 40, 57, 66],
+			[13, 29, 44, 51, 63],
+			[5, 23, "FREE", 60, 70],
+			[7, 16, 41, 56, 73],
+			[9, 21, 32, 59, 62]
+		]
+	},
+	{
+		title: "Tabla Verde #07027",
+		color: "verde",
+		board: [
+			[3, 17, 40, 52, 65],
+			[12, 25, 41, 47, 73],
+			[5, 22, "FREE", 49, 63],
+			[4, 29, 39, 56, 75],
+			[11, 23, 35, 57, 66]
+		]
+	},
+	{
+		title: "Tabla Verde #07034",
+		color: "verde",
+		board: [
+			[10, 19, 35, 53, 61],
+			[14, 28, 42, 51, 63],
+			[4, 17, "FREE", 59, 70],
+			[15, 25, 38, 57, 73],
+			[5, 30, 40, 47, 75]
+		]
+	},
+	{
 		title: "Tabla Naranja #01504",
 		color: "naranja",
 		board: [
@@ -120,6 +186,274 @@ const bingoBoards = [
 			[7, 28, "FREE", 59, 68],
 			[14, 23, 42, 46, 65],
 			[13, 22, 32, 52, 75]
+		]
+	},
+	{
+		title: "Tabla Naranja #07528",
+		color: "naranja",
+		board: [
+			[12, 16, 42, 52, 67],
+			[15, 29, 35, 56, 72],
+			[3, 22, "FREE", 50, 70],
+			[14, 23, 34, 58, 64],
+			[2, 25, 38, 46, 71]
+		]
+	},
+	{
+		title: "Tabla Naranja #07534",
+		color: "naranja",
+		board: [
+			[15, 29, 38, 52, 66],
+			[5, 27, 36, 58, 75],
+			[10, 20, "FREE", 59, 67],
+			[7, 23, 43, 60, 63],
+			[9, 30, 42, 47, 64]
+		]
+	},
+	{
+		title: "Tabla Naranja #07540",
+		color: "naranja",
+		board: [
+			[4, 29, 34, 58, 66],
+			[2, 19, 41, 50, 62],
+			[12, 20, "FREE", 56, 67],
+			[7, 16, 36, 59, 61],
+			[15, 23, 44, 60, 72]
+		]
+	},
+	{
+		title: "Tabla Naranja #07541",
+		color: "naranja",
+		board: [
+			[13, 24, 31, 58, 62],
+			[11, 27, 44, 52, 66],
+			[6, 30, "FREE", 50, 71],
+			[1, 28, 35, 60, 65],
+			[4, 16, 37, 47, 69]
+		]
+	},
+	{
+		title: "Tabla Naranja #07542",
+		color: "naranja",
+		board: [
+			[9, 28, 42, 53, 70],
+			[15, 23, 41, 49, 73],
+			[12, 25, "FREE", 47, 65],
+			[11, 18, 33, 56, 61],
+			[6, 21, 32, 48, 64]
+		]
+	},
+
+
+	{
+		title: "Tabla Azul #02273",
+		color: "azul",
+		board: [
+			[10, 30, 33, 60, 63],
+			[13, 23, 42, 48, 70],
+			[1, 18, "FREE", 59, 61],
+			[15, 26, 34, 58, 67],
+			[8, 17, 45, 56, 68]
+		]
+	},
+	{
+		title: "Tabla Azul #06039",
+		color: "azul",
+		board: [
+			[11, 23, 44, 53, 61],
+			[1, 21, 41, 49, 64],
+			[2, 28, "FREE", 56, 74],
+			[12, 29, 36, 51, 67],
+			[13, 18, 35, 58, 73]
+		]
+	},
+	{
+		title: "Tabla Azul #06040",
+		color: "azul",
+		board: [
+			[14, 20, 41, 46, 70],
+			[3, 16, 39, 51, 66],
+			[15, 29, "FREE", 50, 69],
+			[13, 28, 38, 55, 68],
+			[2, 30, 32, 47, 72]
+		]
+	},
+	{
+		title: "Tabla Azul #06041",
+		color: "azul",
+		board: [
+			[11, 23, 37, 49, 67],
+			[4, 16, 40, 48, 72],
+			[5, 24, "FREE", 47, 65],
+			[8, 17, 32, 55, 61],
+			[2, 21, 39, 51, 75]
+		]
+	},
+	{
+		title: "Tabla Azul #02203",
+		color: "azul",
+		board: [
+			[12, 25, 33, 52, 67],
+			[6, 21, 31, 55, 64],
+			[10, 19, "FREE", 60, 66],
+			[13, 26, 43, 59, 62],
+			[11, 18, 45, 46, 74]
+		]
+	},
+	{
+		title: "Tabla Azul #02203",
+		color: "azul",
+		board: [
+			[13, 28, 41, 54, 61],
+			[8, 23, 37, 57, 66],
+			[14, 22, "FREE", 48, 72],
+			[5, 29, 38, 52, 71],
+			[15, 26, 39, 56, 63]
+		]
+	},
+	{
+		title: "Tabla Azul #02205",
+		color: "azul",
+		board: [
+			[2, 21, 37, 60, 66],
+			[4, 16, 42, 46, 63],
+			[14, 18, "FREE", 55, 65],
+			[11, 26, 38, 59, 70],
+			[13, 27, 44, 58, 74]
+		]
+	},
+	{
+		title: "Tabla Azul #06034",
+		color: "azul",
+		board: [
+			[9, 17, 35, 47, 74],
+			[12, 21, 36, 59, 63],
+			[13, 28, "FREE", 58, 66],
+			[8, 24, 44, 48, 67],
+			[15, 29, 39, 49, 71]
+		]
+	},
+	{
+		title: "Tabla Azul #06042",
+		color: "azul",
+		board: [
+			[14, 20, 38, 46, 67],
+			[9, 26, 33, 58, 69],
+			[10, 27, "FREE", 53, 66],
+			[15, 28, 42, 57, 62],
+			[11, 29, 35, 47, 70]
+		]
+	},
+	{
+		title: "Tabla Azul #06027",
+		color: "azul",
+		board: [
+			[12, 17, 33, 46, 69],
+			[3, 18, 44, 56, 66],
+			[11, 29, "FREE", 58, 64],
+			[7, 21, 36, 59, 70],
+			[8, 23, 45, 53, 67]
+		]
+	},
+
+
+	{
+		title: "Tabla Roja #06542",
+		color: "roja",
+		board: [
+			[10, 24, 37, 56, 71],
+			[13, 19, 38, 47, 73],
+			[11, 21, "FREE", 46, 72],
+			[6, 29, 44, 59, 62],
+			[5, 17, 33, 53, 65]
+		]
+	},
+	{
+		title: "Tabla Roja #06527",
+		color: "roja",
+		board: [
+			[13, 28, 32, 56, 64],
+			[5, 19, 40, 50, 68],
+			[6, 23, "FREE", 59, 61],
+			[8, 30, 34, 55, 75],
+			[15, 27, 38, 46, 67]
+		]
+	},
+	{
+		title: "Tabla Roja #06534",
+		color: "roja",
+		board: [
+			[15, 19, 31, 53, 67],
+			[10, 18, 34, 55, 61],
+			[12, 29, "FREE", 57, 64],
+			[13, 26, 35, 59, 68],
+			[7, 30, 33, 49, 70]
+		]
+	},
+	{
+		title: "Tabla Roja #06528",
+		color: "roja",
+		board: [
+			[4, 25, 37, 59, 73],
+			[1, 21, 45, 60, 71],
+			[10, 22, "FREE", 52, 65],
+			[2, 20, 33, 46, 64],
+			[9, 23, 41, 49, 67]
+		]
+	},
+	{
+		title: "Tabla Roja #06540",
+		color: "roja",
+		board: [
+			[1, 16, 39, 59, 64],
+			[9, 20, 41, 48, 75],
+			[12, 22, "FREE", 56, 72],
+			[13, 29, 43, 58, 66],
+			[5, 23, 40, 53, 63]
+		]
+	},
+	{
+		title: "Tabla Roja #06541",
+		color: "roja",
+		board: [
+			[8, 29, 36, 60, 74],
+			[13, 23, 32, 59, 71],
+			[12, 24, "FREE", 55, 68],
+			[11, 27, 42, 56, 63],
+			[6, 25, 33, 52, 65]
+		]
+	},
+	{
+		title: "Tabla Roja #00667",
+		color: "roja",
+		board: [
+			[3, 24, 33, 56, 61],
+			[8, 27, 36, 58, 66],
+			[14, 18, "FREE", 60, 72],
+			[10, 28, 38, 50, 67],
+			[1, 29, 34, 52, 75]
+		]
+	},
+	{
+		title: "Tabla Roja #00668",
+		color: "roja",
+		board: [
+			[1, 16, 38, 48, 73],
+			[8, 19, 34, 50, 65],
+			[13, 23, "FREE", 47, 74],
+			[2, 27, 40, 55, 64],
+			[10, 30, 39, 56, 72]
+		]
+	},
+	{
+		title: "Tabla Roja #02882",
+		color: "roja",
+		board: [
+			[3, 26, 37, 59, 73],
+			[12, 20, 38, 58, 71],
+			[13, 23, "FREE", 56, 74],
+			[14, 21, 39, 46, 75],
+			[5, 17, 31, 60, 69]
 		]
 	},
 ];
@@ -205,48 +539,66 @@ function handleFormSubmit(event) {
 	const number = document.getElementById('bingoNumber').value;
 	const targetClass = letter + number;
 
-	const confirmacion = window.confirm(`¿Estás seguro marcar ${targetClass}?`);
-	// Obtener el filtro seleccionado
-	 if(confirmacion){
-		const selectedFilter = document.querySelector('form.filters input[name="color"]:checked').value;
+	let confirmacion = false; //window.confirm(`¿Estás seguro marcar ${targetClass}?`);
 
-		if (selectedFilter === 'todo') {
-			// Si el filtro es "todo", buscar todas las tablas
-			const tables = document.querySelectorAll('table');
-			tables.forEach(table => {
-				const cells = table.querySelectorAll(`.${targetClass}`);
-				cells.forEach(cell => {
-					cell.classList.add('active');
-				});
+		Swal.fire({
+		title: `¿Estás seguro de marcar ${targetClass}?`,
+		text: "Esta acción no se puede revertir.",
+		icon: 'warning',
+		showCancelButton: true,
+		confirmButtonColor: '#3085d6',
+		cancelButtonColor: '#d33',
+		confirmButtonText: 'Sí, estoy seguro',
+		cancelButtonText: 'Cancelar'
+		}).then((result) => {
+		// Aquí es donde la validación ocurre ahora
+		if (result.isConfirmed) {
+			// La lógica que estaba dentro de 'if (confirmacion)' va aquí
+			// Por ejemplo, tu código para aplicar el filtro o realizar la acción
+			confirmacion = true;
+			const selectedFilter = document.querySelector('form.filters input[name="color"]:checked').value;
 
-			});
-		} else {
-			// Si no es "todo", buscar la tabla con la clase correspondiente al filtro
-			const targetTables = document.querySelectorAll(`table.${selectedFilter}`);
-
-			if (targetTables) {
-
-				targetTables.forEach(tabla => {
-					const cells = tabla.querySelectorAll(`.${targetClass}`);
+			if (selectedFilter === 'todo') {
+				// Si el filtro es "todo", buscar todas las tablas
+				const tables = document.querySelectorAll('table');
+				tables.forEach(table => {
+					const cells = table.querySelectorAll(`.${targetClass}`);
 					cells.forEach(cell => {
 						cell.classList.add('active');
 					});
+
 				});
-			}
-		}
+			} else {
+				// Si no es "todo", buscar la tabla con la clase correspondiente al filtro
+				const targetTables = document.querySelectorAll(`table.${selectedFilter}`);
 
-		for (let i = 0; i < bingoBoards.length; i++) {
-			if (isTableComplete(i)) {
-				showBingoAlert(bingoBoards[i].title);
-			}
-		}
+				if (targetTables) {
 
-		// Guardar el valor en localStorage
-		const storedValues = JSON.parse(localStorage.getItem('bingoValues')) || {};
-		storedValues[targetClass] = true;
-		localStorage.setItem('bingoValues', JSON.stringify(storedValues));
-		document.getElementById('bingoNumber').value = "";
-	} 
+					targetTables.forEach(tabla => {
+						const cells = tabla.querySelectorAll(`.${targetClass}`);
+						cells.forEach(cell => {
+							cell.classList.add('active');
+						});
+					});
+				}
+			}
+
+			for (let i = 0; i < bingoBoards.length; i++) {
+				if (isTableComplete(i)) {
+					showBingoAlert(bingoBoards[i].title);
+				}
+			}
+
+			// Guardar el valor en localStorage
+			const storedValues = JSON.parse(localStorage.getItem('bingoValues')) || {};
+			storedValues[targetClass] = true;
+			localStorage.setItem('bingoValues', JSON.stringify(storedValues));
+			document.getElementById('bingoNumber').value = "";
+		} else {
+			// La lógica para cuando el usuario cancela va en este bloque
+			console.log('La acción ha sido cancelada.');
+		}
+		});
 	
 }
 
@@ -304,7 +656,22 @@ function isTableComplete(tableIndex) {
 
 // Función para mostrar una alerta de Bingo
 function showBingoAlert(tableTitle) {
-	alert(`¡Bingo en ${tableTitle}!`);
+	//alert(`¡Bingo en ${tableTitle}!`);
+	 // 1. Muestra una alerta de SweetAlert2
+    Swal.fire({
+      title: `¡Bingo en ${tableTitle}!`,
+      text: '¡Felicidades, has ganado!',
+      icon: 'success',
+      confirmButtonText: 'Seguir Jugando'
+    });
+
+    // 2. Dispara el efecto de confeti
+    // La función confetti() de la librería Canvas Confetti lanza los efectos.
+    confetti({
+      particleCount: 450, // Más partículas para un efecto más espectacular
+      spread: 90,         // Un ángulo de propagación más amplio
+      origin: { y: 0.6 }  // Los confetis salen desde la mitad de la pantalla
+    });
 }
 
 // Función para ocultar/mostrar tablas según el filtro seleccionado
@@ -348,10 +715,28 @@ loadSavedValues();
 const resetButton = document.getElementById('resetButton');
 resetButton.addEventListener('click', () => {
 
-	const confirmacion = window.confirm('¿Estás seguro de reiniciar el juego?');
-	if(confirmacion){
-		localStorage.removeItem('bingoValues');
-		location.reload(); // Recargar la página para reiniciar la partida
-	} 
+	Swal.fire({
+    title: '¿Estás seguro de reiniciar el juego?',
+    text: "Esto borrará el progreso de la partida actual.",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Sí, reiniciar',
+    cancelButtonText: 'Cancelar'
+}).then((result) => {
+    if (result.isConfirmed) {
+        // La lógica para reiniciar el juego va aquí
+        localStorage.removeItem('bingoValues');
+        location.reload(); // Recargar la página para reiniciar
+    } else {
+        // Opcional: El usuario ha cancelado la acción.
+        Swal.fire(
+            'Cancelado',
+            'El juego no se ha reiniciado.',
+            'info'
+        );
+    }
+});
 });
 

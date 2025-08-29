@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bingo Puerta del Norte 2025</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tesseract.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 <body class="bg-gray-950 text-white container mx-auto">
-    <div class="wrapper-form">
-        <button id="resetButton">Reiniciar Partida</button>
-        <form id="bingoForm">
+    <h1 class="text-4xl font-black text-gray-900 dark:text-white text-center py-4">Bingo Puerta del Norte 2025</h1>
+    <div class="wrapper-form flex flex-col md:flex-row flex-nowrap">
+        <button id="resetButton" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Reiniciar Partida</button>
+        
+        <form class="filters" id="filterForm">
+            <h3 class="mb-4 font-semibold text-gray-900 dark:text-white">Filtros por color:</h3>
+            <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                    <div class="flex items-center ps-3">
+                        <input id="list-radio-red" type="radio" value="roja" name="color" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="list-radio-red" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Roja</label>
+                    </div>
+                </li>
+                <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                    <div class="flex items-center ps-3">
+                        <input id="list-radio-green" type="radio" value="verde" name="color" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="list-radio-green" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Verde </label>
+                    </div>
+                </li>
+                <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                    <div class="flex items-center ps-3">
+                        <input id="list-radio-blue" type="radio" value="azul" name="color" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="list-radio-blue" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Azul</label>
+                    </div>
+                </li>
+                <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                    <div class="flex items-center ps-3">
+                        <input id="list-radio-orange" type="radio" value="naranja" name="color" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="list-radio-orange" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Naraja</label>
+                    </div>
+                </li>
+                <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                    <div class="flex items-center ps-3">
+                        <input id="list-radio-all" type="radio" value="todo" name="color" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="list-radio-all" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Todo</label>
+                    </div>
+                </li>
+            </ul>
+
+        </form>
+
+        <form id="bingoForm" class="">
             <div class="group">
-                <label for="bingoLetter" class="text-white">Selecciona una letra:</label>
-                <select id="bingoLetter" class="text-black">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Selecciona una letra:</label>
+                <select id="bingoLetter" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     <option value="B">B</option>
                     <option value="I">I</option>
                     <option value="N">N</option>
@@ -23,33 +64,14 @@
                 </select>
             </div>
             <div class="group">
-                <label for="bingoNumber" class="text-white">Ingresa un número:</label>
-                <input type="number" id="bingoNumber" min="1" max="75" class="text-black">
+                <label for="bingoNumber" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa un número:</label>
+                <input type="number" id="bingoNumber" min="1" max="75" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             </div>
-            <button type="submit" class="text-black">Enviar</button>
-        </form>
-        <form class="filters" id="filterForm">
-            <p class="text-white">Filtros por color:</p>
-            <label class="text-white">
-                <input type="radio" name="color" value="roja"> Roja
-            </label>
-            <label class="text-white">
-                <input type="radio" name="color" value="verde"> Verde
-            </label>
-            <label class="text-white">
-                <input type="radio" name="color" value="azul"> Azul
-            </label>
-            <label class="text-white">
-                <input type="radio" name="color" value="naranja"> Naranja
-            </label>
-            <label class="text-white">
-                <input type="radio" name="color" value="todo" checked> Todo
-            </label>
+            <button type="submit" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Enviar</button>
         </form>
     </div>
-
-    <h1 class="text-center text-white">Bingo Puerta del Norte 2025</h1>
     <div id="bingoTablesContainer"></div>
+    <canvas id="my-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></canvas>
 
     <script type="text/javascript" src="index.js"></script>
 </body>

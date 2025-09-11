@@ -1,9 +1,12 @@
-// Verificar si el valor del filtro existe en localStorage
 const storedFilter = localStorage.getItem('filterValue');
-
-// Obtener el filtro seleccionado
 const selectedFilterInput = document.querySelector('form.filters input[name="color"]:checked');
-const selectedFilter = storedFilter ? storedFilter : selectedFilterInput.value;
+
+// 1. Usa el valor de localStorage.
+// 2. Si es null, intenta usar el valor del input seleccionado.
+// 3. Si ambos son null o undefined, usa 'todos' como valor por defecto.
+const selectedFilter = storedFilter ?? selectedFilterInput?.value ?? 'todos';
+
+console.log(selectedFilter); // 'todos' (si nada está guardado ni seleccionado)
 
 // Guardar el valor del filtro en localStorage
 if (!storedFilter) {

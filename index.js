@@ -224,7 +224,83 @@ const bingoBoards = [
 			[11, 24, 34, 56, 66]
 		]
 	},
-
+	{
+		title: "Tabla Verde #07288",
+		color: "verde",
+		board: [
+			[4, 18, 35, 54, 63],
+			[3, 19, 39, 48, 64],
+			[5, 22, "FREE", 55, 72],
+			[10, 27, 38, 59, 74],
+			[11, 29, 44, 58 , 75]
+		]
+	},
+	{
+		title: "Tabla Verde #07289",
+		color: "verde",
+		board: [
+			[12, 27, 45, 51, 65],
+			[13, 17, 40, 59, 71],
+			[2, 30, "FREE", 47, 63],
+			[14, 21, 43, 56, 68],
+			[11, 22, 44, 52, 64]
+		]
+	},
+	{
+		title: "Tabla Verde #07256",
+		color: "verde",
+		board: [
+			[11, 17, 32, 49, 73],
+			[3, 26, 39, 59, 75],
+			[1, 30, "FREE", 47, 71],
+			[2, 25, 43, 57, 63],
+			[12, 20, 38, 51, 72]
+		]
+	},
+	{
+		title: "Tabla Verde #07255",
+		color: "verde",
+		board: [
+			[15, 30, 38, 52, 63],
+			[7, 24, 32, 46, 69],
+			[2, 17, "FREE", 59, 62],
+			[11, 26, 39, 60, 74],
+			[14, 20, 43, 58, 64]
+		]
+	},
+	{
+		title: "Tabla Verde #07295",
+		color: "verde",
+		board: [
+			[13, 28, 35, 47, 65],
+			[2, 18, 42, 59, 67],
+			[7, 20, "FREE", 56, 74],
+			[14, 24, 32, 46, 70],
+			[12, 25, 40, 60, 63]
+		]
+	},
+	{
+		title: "Tabla Verde #07294",
+		color: "verde",
+		board: [
+			[15, 17, 39, 57, 65],
+			[6, 26, 38, 59, 69],
+			[3, 20, "FREE", 46, 70],
+			[1, 28, 33, 55, 63],
+			[4, 18, 36, 56, 75]
+		]
+	},
+	{
+		title: "Tabla Verde #13180",
+		color: "verde",
+		board: [
+			[15, 29, 41, 58, 64],
+			[7, 19, 44, 51, 73],
+			[2, 24, "FREE", 52, 65],
+			[14, 30, 34, 47, 66],
+			[11, 21, 37, 49, 69]
+		]
+	},
 
 
 
@@ -436,6 +512,94 @@ const bingoBoards = [
 			[5, 23, "FREE", 48, 74],
 			[1, 25, 40, 54, 75],
 			[15, 18, 39, 49, 64]
+		]
+	},
+	{
+		title: "Tabla Naranja #07789",
+		color: "naranja",
+		board: [
+			[12, 28, 41, 48, 65],
+			[3, 17, 32, 56, 61],
+			[11, 24, "FREE", 52, 70],
+			[9, 23, 45, 47, 62],
+			[4, 19, 44, 49, 67]
+		]
+	},
+	{
+		title: "Tabla Naranja #07755",
+		color: "naranja",
+		board: [
+			[14, 27, 40, 49, 68],
+			[1, 18, 45, 51, 64],
+			[9, 26, "FREE", 58, 62],
+			[8, 25, 43, 50, 61],
+			[15, 19, 31, 46, 75]
+		]
+	},
+	{
+		title: "Tabla Naranja #07788",
+		color: "naranja",
+		board: [
+			[6, 20, 43, 52, 67],
+			[11, 28, 42, 48, 74],
+			[4, 18, "FREE", 47, 73],
+			[8, 17, 31, 53, 68],
+			[3, 19, 34, 55, 70]
+		]
+	},
+	{
+		title: "Tabla Naranja #07754",
+		color: "naranja",
+		board: [
+			[14, 29, 33, 47, 67],
+			[11, 21, 43, 51, 66],
+			[9, 26, "FREE", 50, 73],
+			[5, 24, 41, 56, 69],
+			[4, 30, 45, 57, 75]
+		]
+	},
+	{
+		title: "Tabla Naranja #07794",
+		color: "naranja",
+		board: [
+			[15, 20, 34, 58, 74],
+			[6, 17, 37, 51, 72],
+			[8, 30, "FREE", 49, 68],
+			[2, 24, 32, 57, 62],
+			[14, 22, 43, 46, 61]
+		]
+	},
+	{
+		title: "Tabla Naranja #07795",
+		color: "naranja",
+		board: [
+			[4, 21, 32, 46, 69],
+			[6, 18, 45, 58, 75],
+			[10, 25, "FREE", 60, 72],
+			[1, 27, 40, 47, 74],
+			[11, 19, 43, 52, 70]
+		]
+	},
+	{
+		title: "Tabla Naranja #09933",
+		color: "naranja",
+		board: [
+			[14, 23, 42, 57, 74],
+			[10, 18, 38, 59, 75],
+			[8, 21, "FREE", 60, 72],
+			[15, 19, 41, 49, 65],
+			[1, 16, 43, 46, 61]
+		]
+	},
+	{
+		title: "Tabla Naranja #13680",
+		color: "naranja",
+		board: [
+			[12, 21, 44, 58, 73],
+			[1, 17, 41, 51, 64],
+			[6, 23, "FREE", 47, 75],
+			[4, 22, 34, 56, 63],
+			[2, 28, 43, 59, 62]
 		]
 	},
 
@@ -653,6 +817,94 @@ const bingoBoards = [
 			[10, 19, 36, 60, 71]
 		]
 	},
+	{
+		title: "Tabla Azul #06288",
+		color: "azul",
+		board: [
+			[13, 16, 38, 55, 67],
+			[2, 25, 44, 49, 70],
+			[4, 30, "FREE", 53, 65],
+			[11, 29, 39, 47, 63],
+			[8, 22, 34, 48, 71]
+		]
+	},
+	{
+		title: "Tabla Azul #06289",
+		color: "azul",
+		board: [
+			[13, 27, 31, 52, 62],
+			[7, 26, 36, 56, 70],
+			[6, 17, "FREE", 53, 63],
+			[15, 25, 41, 47, 68],
+			[10, 23, 42, 49, 75]
+		]
+	},
+	{
+		title: "Tabla Azul #06256",
+		color: "azul",
+		board: [
+			[11, 22, 35, 55, 70],
+			[1, 27, 31, 53, 68],
+			[6, 29, "FREE", 46, 64],
+			[13, 25, 34, 59, 62],
+			[8, 18, 41, 58, 72]
+		]
+	},
+	{
+		title: "Tabla Azul #06255",
+		color: "azul",
+		board: [
+			[5, 26, 37, 59, 62],
+			[14, 25, 33, 60, 66],
+			[2, 21, "FREE", 52, 65],
+			[6, 22, 38, 53, 67],
+			[13, 29, 43, 46, 64]
+		]
+	},
+	{
+		title: "Tabla Azul #06295",
+		color: "azul",
+		board: [
+			[1, 29, 31, 50, 63],
+			[9, 23, 39, 57, 66],
+			[10, 26, "FREE", 55, 75],
+			[5, 16, 35, 47, 73],
+			[2, 17, 44, 59, 69]
+		]
+	},
+	{
+		title: "Tabla Azul #06294",
+		color: "azul",
+		board: [
+			[10, 29, 41, 46, 65],
+			[3, 30, 40, 47, 74],
+			[1, 16, "FREE", 57, 71],
+			[6, 24, 45, 59, 62],
+			[4, 22, 44, 60, 70]
+		]
+	},
+	{
+		title: "Tabla Azul #10305",
+		color: "azul",
+		board: [
+			[9, 23, 38, 48, 73],
+			[13, 28, 44, 47, 74],
+			[7, 20, "FREE", 59, 64],
+			[12, 17, 33, 50, 65],
+			[1, 18, 42, 49, 66]
+		]
+	},
+	{
+		title: "Tabla Azul #12180",
+		color: "azul",
+		board: [
+			[7, 18, 41, 60, 70],
+			[15, 17, 40, 47, 75],
+			[12, 16, "FREE", 49, 73],
+			[2, 23, 37, 52, 72],
+			[5, 27, 34, 46, 61]
+		]
+	},
 
 
 
@@ -865,6 +1117,94 @@ const bingoBoards = [
 			[6, 26, "FREE", 47, 65],
 			[14, 25, 36, 60, 71],
 			[8, 19, 37, 51, 70]
+		]
+	},
+	{
+		title: "Tabla Roja #06789",
+		color: "roja",
+		board: [
+			[11, 30, 44, 49, 74],
+			[2, 28, 43, 50, 64],
+			[13, 18, "FREE", 59, 68],
+			[14, 20, 31, 54, 75],
+			[8, 24, 36, 51, 62]
+		]
+	},
+	{
+		title: "Tabla Roja #06788",
+		color: "roja",
+		board: [
+			[14, 25, 37, 53, 63],
+			[11, 21, 38, 48, 69],
+			[10, 27, "FREE", 58, 62],
+			[1, 16, 36, 46, 68],
+			[3, 28, 40, 49, 64]
+		]
+	},
+	{
+		title: "Tabla Roja #06755",
+		color: "roja",
+		board: [
+			[7, 21, 40, 55, 70],
+			[9, 25, 36, 54, 66],
+			[15, 16, "FREE", 48, 62],
+			[2, 24, 41, 53, 74],
+			[11, 29, 38, 58, 73]
+		]
+	},
+	{
+		title: "Tabla Roja #06754",
+		color: "roja",
+		board: [
+			[10, 23, 31, 57, 70],
+			[4, 19, 43, 52, 71],
+			[7, 22, "FREE", 50, 64],
+			[1, 24, 44, 49, 63],
+			[14, 27, 45, 47, 74]
+		]
+	},
+	{
+		title: "Tabla Roja #06794",
+		color: "roja",
+		board: [
+			[1, 22, 32, 53, 67],
+			[2, 16, 45, 54, 69],
+			[9, 24, "FREE", 47, 62],
+			[12, 28, 33, 59, 74],
+			[10, 26, 37, 57, 66]
+		]
+	},
+	{
+		title: "Tabla Roja #08925",
+		color: "roja",
+		board: [
+			[15, 17, 41, 53, 61],
+			[2, 28, 39, 47, 67],
+			[5, 30, "FREE", 58, 71],
+			[6, 23, 33, 54, 68],
+			[11, 22, 35, 60, 75]
+		]
+	},
+	{
+		title: "Tabla Roja #06795",
+		color: "roja",
+		board: [
+			[11, 16, 34, 53, 73],
+			[4, 26, 42, 51, 69],
+			[3, 23, "FREE", 47, 70],
+			[8, 29, 45, 49, 66],
+			[5, 28, 39, 46, 63]
+		]
+	},
+	{
+		title: "Tabla Roja #12680",
+		color: "roja",
+		board: [
+			[15, 16, 38, 55, 62],
+			[8, 22, 36, 56, 66],
+			[3, 24, "FREE", 52, 63],
+			[4, 30, 39, 57, 69],
+			[2, 23, 43, 60, 75]
 		]
 	},
 ];
@@ -1151,3 +1491,50 @@ resetButton.addEventListener('click', () => {
 });
 });
 
+// Función principal que se ejecuta al cargar la página
+function setupBoardCounts() {
+    // PASO 1: Calcular los totales
+    const totalBoards = bingoBoards.length;
+    const colorCounts = bingoBoards.reduce((acc, board) => {
+        acc[board.color] = (acc[board.color] || 0) + 1;
+        return acc;
+    }, {});
+
+    // PASO 2: Actualizar la etiqueta "Todo"
+    const todoLabel = document.querySelector('label[for="list-radio-all"]');
+    if (todoLabel) {
+        todoLabel.textContent = `Todo (${totalBoards})`;
+    }
+
+    // PASO 3: Actualizar las etiquetas de cada color
+    for (const color in colorCounts) {
+        const count = colorCounts[color];
+
+		let colorLabel = '';
+		switch (color) {
+			case 'verde':
+				colorLabel = 'green';
+				break;
+			case 'azul':
+				colorLabel = 'blue';
+				break;
+			case 'naranja':
+				colorLabel = 'orange';
+				break;
+			case 'roja':
+				colorLabel = 'red';
+				break;
+			default:
+				break;
+		}
+
+        const labelElement = document.querySelector(`label[for="list-radio-${colorLabel}"]`);
+        
+        if (labelElement) {
+            const capitalizedColor = color.charAt(0).toUpperCase() + color.slice(1);
+            labelElement.textContent = `${capitalizedColor} (${count})`;
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', setupBoardCounts);

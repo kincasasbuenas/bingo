@@ -1491,3 +1491,50 @@ resetButton.addEventListener('click', () => {
 });
 });
 
+// Función principal que se ejecuta al cargar la página
+function setupBoardCounts() {
+    // PASO 1: Calcular los totales
+    const totalBoards = bingoBoards.length;
+    const colorCounts = bingoBoards.reduce((acc, board) => {
+        acc[board.color] = (acc[board.color] || 0) + 1;
+        return acc;
+    }, {});
+
+    // PASO 2: Actualizar la etiqueta "Todo"
+    const todoLabel = document.querySelector('label[for="list-radio-all"]');
+    if (todoLabel) {
+        todoLabel.textContent = `Todo (${totalBoards})`;
+    }
+
+    // PASO 3: Actualizar las etiquetas de cada color
+    for (const color in colorCounts) {
+        const count = colorCounts[color];
+
+		let colorLabel = '';
+		switch (color) {
+			case 'verde':
+				colorLabel = 'green';
+				break;
+			case 'azul':
+				colorLabel = 'blue';
+				break;
+			case 'naranja':
+				colorLabel = 'orange';
+				break;
+			case 'roja':
+				colorLabel = 'red';
+				break;
+			default:
+				break;
+		}
+
+        const labelElement = document.querySelector(`label[for="list-radio-${colorLabel}"]`);
+        
+        if (labelElement) {
+            const capitalizedColor = color.charAt(0).toUpperCase() + color.slice(1);
+            labelElement.textContent = `${capitalizedColor} (${count})`;
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', setupBoardCounts);
